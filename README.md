@@ -26,7 +26,7 @@ It provides the necessary rigorous computations of the bounds presented along th
 
 # Equations under study
 
-We present some numerical details for the applications presented in Section 4 in [[1]](https://arxiv.org/abs/2403.10450). 
+We present some numerical details for the applications presented in Section 4 in [[1]](https://arxiv.org/abs/2403.10450). Each PDE is defined on the torus (in space) and we prove constructively the existence of solutions to IVPs for a given initial data. 
 
 ## The 2D Navier-Stokes equations
 The 2D Navier-Stokes equation for the vorticity reads 
