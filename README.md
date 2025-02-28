@@ -28,20 +28,26 @@ We present some numerical details for the applications presented in Section 4 in
 
 ## The 2D Navier-Stokes equations
 The 2D Navier-Stokes equation for the vorticity reads 
+
 $$\omega_t = \nu \Delta \omega + \left(\Delta^{-1}\nabla \times \omega\right)\cdot \nabla w$$
+
 and is associated to an initial condition $\omega(0,x) = b(x)$. In the code "NS_main.jl", we choose $b(x) = 2\sin(2x_1)\sin(x_2) - 2 \sin(x_1)\sin(2x_2) + 0.8\sin(x_1)\sin(3x_2) - 0.8 \sin(3x_1)\sin(x_2)  + 1.2\sin(2x_1)\sin(3x_2) - 1.2 \sin(3x_1)\sin(2x_2)$ and $\nu = 0.2$. We first take a time step of size $h=0.03$ and solve 73 consecutive IVPs of length 0.03 (starting at $b$). The propagation of error from one integration to the next is described in the Appendix of  [[1]](https://arxiv.org/abs/2403.10450). 
 
 
 ## The Swift-Hohenberg PDE
 
 The 1D Swift-Hohenberg equation reads 
+
 $$ u_t = (\alpha-1)u - 2u_{xx} - u_{xxxx} - u^3$$
+
 and is associated to an initial condition $u(0,x) = b(x)$. In the code "SH_main.jl", we choose $b(x) = 0.02 cos(x)$ and $\alpha = 8.1$. We integrate the PDE for a time step of size $h=3$. In particular, the approximate solution $U_0$ is stored in the file "U0_SH.jld2" and contains a sequence of Fourier-Chebyshev coefficients with an order $K0 = 24$ in Fourier and $N0 = 150$ in Chebyshev.
 
 ## The Kuramoto-Sivashinski PDE
 
 The 1D Kuramoto-Sivashinski reads 
+
 $$u_t = -u_{xx} - \alpha u_{xxxx} + \nu uu_x$$
+
 and is associated to an initial condition $u(0,x) = b(x)$. In the code "KS_main.jl", we choose $b$ to be a point on a periodic orbit, $\nu = -2$ and $\alpha = 0.127$. We integrate the PDE for a time step of size $h= 2.244333563761175$, corresponding to the period of the periodic orbit. In fact, we demonstrate the ability to integrate for a time step being a period. The approximate solution $U_0$ is stored in the file "U0_KS.jld2" and contains a sequence of Fourier-Chebyshev coefficients with an order $K0 = 31$ in Fourier and $N0 = 80$ in Chebyshev.
 
 
