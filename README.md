@@ -19,7 +19,7 @@ Table of contents:
 
 This Julia code is a complement to the article 
 
-#### [[1]](https://arxiv.org/abs/2403.10450) : "Stationary non-radial localized patterns in the planar Swift-Hohenberg PDE: constructive proofs of existence", M. Cadiot, J-P. Lessard and J-C. Nave, [ArXiv Link](https://arxiv.org/abs/2403.10450).
+#### [[1]](https://arxiv.org/abs/2403.10450) : "Recent advances about the rigorous integration of parabolic PDEs via fully spectral Fourier-Chebyshev expansions", M. Cadiot and J-P. Lessard, [ArXiv Link](https://arxiv.org/abs/2403.10450).
 
 It provides the necessary rigorous computations of the bounds presented along the paper. The computations are performed using the package [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl). The mathematical objects (spaces, sequences, operators,...) are built using the package [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl). 
 
