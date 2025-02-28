@@ -5,8 +5,10 @@ Table of contents:
 
 
 * [Introduction](#introduction)
-* [The Swift Hohenberg equation](#the-swift-hohenberg-equation)
-   * [Proof of a branch of periodic solutions limiting a localized pattern](#proof-of-a-branch-of-periodic-solutions-limiting-a-localized-pattern)
+* [Equations under study](#equations-under-study)
+   * [The 2D Navier-Stokes equations](#the-2D-navier-stokes-equations)
+   * [The Swift-Hohenberg PDE](#the-swift-hohenberg-pde)
+   * [The Kuramoto-Sivashinskig PDE](#the-kuramoto-sivashinski-pde)
 * [Utilisation and References](#utilisation-and-references)
 * [License and Citation](#license-and-citation)
 * [Contact](#contact)
@@ -72,7 +74,7 @@ This code is available as open source under the terms of the [MIT License](http:
 If you wish to use this code in your publication, research, teaching, or other activities, please cite it using the following BibTeX template:
 
 ```
-@software{LocalizedPatternSH.jl,
+@software{IVP-Cheb.jl,
   author = {Matthieu Cadiot},
   title  = {{IVP-Cheb}.jl},
   url    = {https://github.com/matthieucadiot/IVP-Cheb.jl},
