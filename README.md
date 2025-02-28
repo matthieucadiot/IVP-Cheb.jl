@@ -57,7 +57,7 @@ and is associated to an initial condition $u(0,x) = b(x)$. In the code "KS_main.
 
 The files C0_i.jld2 and C1_i.jld2 ($i \in \{1, \dots, 10\}$) contain the precomputed values of $C_0(\mu)$ and $C_1(\mu)$ described in Section 3.1 of [[1]](https://arxiv.org/abs/2403.10450). These files have to be in the current folder and will be used directly in the proof. In particular, such values have been computed thanks to the code "computation_constants.jl".
 
-Each "main" code is associated to a list of functions, which are necessary for the rigorous computations of the proof. The 3 lists essentially contains the same functions, and only differ at some very specific points. Such differences arise from the optimization of the given problem. 
+Each "main" code is associated to a list of functions, which are necessary for the rigorous computations of the proof. The 3 lists essentially contains the same functions, and only differ at some very specific points. Such differences arise from the optimization of the given problem. The code corresponding to the Kuramoto-Sivashinski PDE contains a more detailled description of the numerical techniques. 
 
 
  The code is build using the following packages :
