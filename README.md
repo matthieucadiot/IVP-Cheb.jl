@@ -65,6 +65,7 @@ Each "main" code is associated to a list of functions, which are necessary for t
  - [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl)
  - [LinearAlgebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/)
  - [JLD2](https://github.com/JuliaIO/JLD2.jl)
+ - [MATLAB](https://github.com/JuliaInterop/MATLAB.jl)
  
  
  # License and Citation
