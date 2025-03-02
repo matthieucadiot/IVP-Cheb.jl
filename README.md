@@ -35,6 +35,12 @@ $$\omega_t = \nu \Delta \omega + \left(\Delta^{-1}\nabla \times \omega\right)\cd
 
 and is associated to an initial condition $\omega(0,x) = b(x)$. In the code "NS_main.jl", we choose $b(x) = 2\sin(2x_1)\sin(x_2) - 2 \sin(x_1)\sin(2x_2) + 0.8\sin(x_1)\sin(3x_2) - 0.8 \sin(3x_1)\sin(x_2)  + 1.2\sin(2x_1)\sin(3x_2) - 1.2 \sin(3x_1)\sin(2x_2)$ and $\nu = 0.2$. We first take a time step of size $h=0.03$ and solve 73 consecutive IVPs of length 0.03 (starting at $b$). The propagation of error from one integration to the next is described in the Appendix of  [[1]](https://arxiv.org/abs/2403.10450). 
 
+In this proof we choose $A = I_d - \mathcal{K}$, where $\mathcal{K}$ is the compact operator defined in Section 2 of  [[1]](https://arxiv.org/abs/2403.10450). In particular, such a simplication allows to compute simple bounds for Theorem 2.2 and we get
+- $Y = (1+ \|\mathcal{K}\|)\|F(\overline{U})\|
+- $Z1 = \|\mathcal{K}\|^2$
+- $Z2 = (1 + \|\mathcal{K}\|) \|\mathcal{D}_{C_0} DQ(\overline{U})\|$.
+
+In particular, we have that $\|mathcal{K}\| = \mathcal{O}(h)$, so since the time step $h$ is small, we still obtain that $Z1<1$ and we are able to verify the hypotheses of Theorem 2.2.
 
 ## The Swift-Hohenberg PDE
 
