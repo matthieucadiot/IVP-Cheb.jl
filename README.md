@@ -41,7 +41,7 @@ In this proof we choose $A = I_d - \mathcal{K}$, where $\mathcal{K}$ is the comp
 - $Z2 = (1 + ||\mathcal{K}||) ||\mathcal{D}_{C_0} DQ(\overline{U})||$.
 
 In particular, we have that $||\mathcal{K}|| = \mathcal{O}(h)$. Since the time step $h$ is small, we easily obtain that $Z1<1$ and we are able to verify the hypotheses of Theorem 2.2. In particular, concerning the propagation of error from one integration to the next (cf. Appendix), we have that 
-$|| A \mathcal{L}^{-1}_k|| \leq 1 + ||K||$ for all $k \in \mathbb{Z}^2$. Overall, this strategy allows to avoid the inversion of a big matrix (namely the construction of $A_0$) and provides simple bounds, while still allowing the resolution of IVPs. In complex dynamics, such as the Navier-Stokes equations, this feature is notably useful.
+$|| A (\mathcal{L}^{-1}_k)_{col(0)}|| \leq 1 + ||K||$ for all $k \in \mathbb{Z}^2$. Overall, this strategy allows to avoid the inversion of a big matrix (namely the construction of $A_0$) and provides simple bounds, while still allowing the resolution of IVPs. In complex dynamics, such as the Navier-Stokes equations, this feature is notably useful.
 
 ## The Swift-Hohenberg PDE
 
